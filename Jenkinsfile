@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Hello world') {
       steps {
-        sh 'mvn -X clean install -Dlicense.skip=true'
+        echo 'HELLO WORLD!'
       }
     }
 
